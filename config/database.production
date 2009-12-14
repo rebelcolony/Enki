@@ -1,0 +1,9 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: kevbett_blog
+  pool: 5
+  username: root
+  password: Ve7arc
+  socket: /var/run/mysqld/mysqld.sock
