@@ -5,5 +5,5 @@ production:
   database: kevbett_blog
   pool: 5
   username: root
-  password: Ve7arc
+  password: Ve7arb
   socket: /var/run/mysqld/mysqld.sock
