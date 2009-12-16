@@ -124,11 +124,15 @@ h2 a, h3, h4, h5
   color: #333333;
 }
 
+h3 {
+	margin-bottom:0px;
+}
+
 /* Text */
 p
 {
   padding: 0px;
-  margin-top: 0.5em;
+  margin-top: 0.1em;
   margin-bottom: 1em;
   margin-left: 0px;
   margin-right: 0px;
