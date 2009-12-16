@@ -1,31 +1,30 @@
-/* High level containers */
-body
-{
+/*==STRUCTURE=============================================================*/
+body {
   color: black;
-
-  font: normal 12px verdana, arial, helvetica, sans-serif;
+  font: normal 12px Tahoma, verdana, arial, helvetica, sans-serif;
   line-height: 1.5;
   padding: 0px;
   margin: 0px;
 }
 
-#page_container
-{
-  width: 70em;
-  position: absolute;
+#page_container {
+  width: 1150px;
+	margin: 0 auto;
+  position:;
   min-height: 400px;
-
   color: black;
-
   margin-top: 5px;
-  padding-left: 10px;
-  border-right: solid 1px #aaaaaa;
-  border-top: solid 1px #aaaaaa;
+  padding-left:;
+}
+
+#main_content {
+	width:800px;
+	float:right;
 }
 
 #footer
 {
-  position: absolute;
+  position:;
   bottom: -1px;
   right: -1px;
   font-size: 8pt;
@@ -37,89 +36,16 @@ body
   border-bottom: solid 1px #aaaaaa;
 }
 
-/* Headings */
-h1#page_heading
-{
-  font-size: 24pt;
-}
-
-h2
-{
-  font-size: 1.2em;
-  color: #333333;
-}
-
-h2 a, h3, h4, h5
-{
-  color: #333333;
-}
-
-/* Text */
-p
-{
-  padding: 0px;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-strong
-{
-  color: #333333;
-}
-/* Links */
-.openid
-{
-  background-image: url("/images/openid_icon.png");
-  padding-left: 15px;
-  background-repeat: no-repeat;
-  background-position: 0px 2px;
-}
-
-a
-{
-  color: #000051;
-
-  text-decoration: none;
-}
-
-small a, label a
-{
-  text-decoration: underline;
-}
-
-a:hover
-{
-  text-decoration: underline;
-}
-
-#footer a
-{
-  color: gray;
-  text-decoration: underline;
-}
-
-img
-{
-  border: solid 1px black;
-}
-
-/* Two columns */
-#navigation
-{
-  position: absolute;
-  width: 10em;
-  top: -1px;
-  right: -1px;
-
-  border: none;
+#navigation {
+  height:;
+  width: 180px;
   border-left: solid 1px #aaaaaa;
   border-bottom: solid 1px #aaaaaa;
-  border-top: solid 1px white;
-  border-right: solid 1px white;
-
+  border-top: solid 1px #aaaaaa;
+  border-right: solid 1px #aaaaaa;
   padding: 10px;
+	float:left;
+	margin-top:20px;
 }
 
 #navigation h2
@@ -166,6 +92,80 @@ img
 {
   margin-bottom: 1em;
 }
+
+/* Headings */
+h1#page_heading
+{
+  font-size: 24pt;
+}
+
+h2
+{
+  font-size: 2em;
+  color: #333333;
+}
+
+h2 a, h3, h4, h5
+{
+  color: #333333;
+}
+
+/* Text */
+p
+{
+  padding: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+strong
+{
+  color: #333333;
+}
+/* Links */
+.openid
+{
+  background-image: url("/images/openid_icon.png");
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+}
+
+#main p a {
+  	color: #2951A0;
+	border-bottom: 1px dashed blue;
+  	text-decoration: none;
+}
+
+#main p a:hover {
+  	color: #fff;
+  	text-decoration: none;
+	background-color:#06F;
+}
+small a, label a
+{
+  text-decoration: underline;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+#footer a
+{
+  color: gray;
+  text-decoration: underline;
+}
+
+img
+{
+  border: solid 1px black;
+}
+
+/* Two columns */
 
 #main
 {
@@ -235,7 +235,8 @@ h2
   clear: both;
 }
 
-/* Forms */
+/*==Forms==================================================================== */
+
 label
 {
   margin-left: 1em;
@@ -313,8 +314,8 @@ hr
   height: 1px;
 }
 
-#preview
-{
+
+#preview {
   height: 200px;
   overflow: auto;
 }
@@ -325,10 +326,11 @@ hr
   padding: 10px;
 }
 
-/* Syntax */
 
 
-/* TOC */
+
+/*==TOC================================================================= */
+
 fieldset.toc
 {
   float: right;
@@ -361,7 +363,8 @@ pre.ruby .constant { color: #961818; }
 pre.ruby .comment { color: #f37e00; }
 pre.ruby .string { color: #b77c0a; }
 
-/* CODERAY */
+/*==CODERAY================================================================ */
+
 .CodeRay {
   background-color: #f8f8f8;
   border: 1px solid silver;

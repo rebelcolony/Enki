@@ -1,6 +1,8 @@
 class Post < ActiveRecord::Base
   DEFAULT_LIMIT = 15
-
+  
+ 
+  
   acts_as_taggable
 
   has_many                :comments, :dependent => :destroy

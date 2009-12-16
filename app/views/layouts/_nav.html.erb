@@ -1,0 +1,31 @@
+<div id="navigation">
+	<div id="profile">
+		<%= image_tag "web_portrait.jpg" %>
+		<p><small>I'm Kevin Bett, a 30 something web developer from Scotland living in the Philippines.</small></p>
+	</div>	
+	<h2>Pages</h2>
+	<ul>
+		<% page_links_for_navigation.each do |link| -%>
+	  	<li><%= link_to(h(link.name), link.url) %></li>
+	  <% end -%>
+	</ul>
+	<div id ="search_box">
+		<form method="get" id="sform" action="http://www.google.com/search">
+ 			<h2><label for="q">Search</label></h2>
+      <input type="text" id="q" value="" name="q" />
+      <input type="hidden" name="sitesearch" value="<%=h config[:url] %>" />
+  	</form>
+	<!--END #SEARCH_BOX --></div>
+	 	<% unless category_links_for_navigation.empty? -%>
+	  	<h2>Categories</h2>
+	 <ul>
+	 	<% category_links_for_navigation.each do |link| -%>
+	  	<li><%= link_to(h(link.name), link.url) %></li>
+	  <% end -%>
+	</ul>
+	<% end -%>
+	<h2>More</h2>
+		<ul>
+			<li><%= link_to "Twitter", "http://www.twitter.com/kevbett" %></li>
+		</ul>	
+<!-- END #NAVIGATION --></div>	     
