@@ -92,6 +92,15 @@ body {
 {
   margin-bottom: 1em;
 }
+#navigation a {
+	color: #2951A0;
+	border-bottom: 1px dashed blue;
+  	text-decoration: none;
+}
+#navigation a:hover {
+	color: #fff;
+	background-color:#69C;
+}
 
 /* Headings */
 h1#page_heading
@@ -103,6 +112,11 @@ h2
 {
   font-size: 2em;
   color: #333333;
+}
+
+h2 a:hover {
+	background-color:#69C;
+	text-decoration:none;
 }
 
 h2 a, h3, h4, h5
@@ -142,7 +156,7 @@ strong
 #main p a:hover {
   	color: #fff;
   	text-decoration: none;
-	background-color:#06F;
+	background-color:#69C;
 }
 small a, label a
 {
