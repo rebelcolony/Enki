@@ -103,18 +103,16 @@ body {
 }
 
 /* Headings */
-h1#page_heading
-{
-  font-size: 24pt;
+h1 a {
+  	color:#000;
+	letter-spacing:-0.04em;
+	line-height:32px;
+	text-shadow: 0 1px 2px #B3B4B3;
+	font-size:32px;
 }
 
-h2
-{
-  font-size: 2em;
-  color: #333333;
-}
 
-h2 a:hover {
+h1 a:hover {
 	background-color:#69C;
 	text-decoration:none;
 }

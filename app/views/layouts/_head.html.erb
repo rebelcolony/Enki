@@ -11,5 +11,6 @@
   <%= javascript_include_tag 'jquery' %>
   <%= open_id_delegation_link_tags(h(config[:open_id_delegation, :server]), h(config[:open_id_delegation, :delegate])) if config[:open_id_delegation] %>
   <%= yield(:head) %>
+	
 </head>
 <body>
